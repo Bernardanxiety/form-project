@@ -1,7 +1,256 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+html {
+  font-size: 62.5%;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css */
+
+body {
+  color: #000;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+h2 {
+  line-height: 1.4;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* links */
+.link-btn {
+  --link-clr: #fff;
+
+  display: inline-block;
+  background-color: #596d48;
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+}
+
+/* utility classes */
+.link {
+  text-decoration: none;
+  color: var(--link-clr, inherit);
+}
+
+.clr-green {
+  color: #596d48;
+}
+
+/* hero section */
+.hero {
+  background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  min-height: 350px;
+  display: grid;
+  place-items: center;
+}
+
+.bg-dark {
+  display: flex;
+  gap: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  font-family: Pacifico;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.hero .logo {
+  width: 50px;
+}
+
+/* main content */
+main {
+  background-color: hsl(0, 0%, 98%);
+}
+
+main .wrapper {
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .wrapper :where(:not(:first-child)) {
+  margin-top: var(--space, 1em);
+}
+
+main .wrapper header {
+  font-weight: bold;
+}
+
+.form-div {
+  background-color: #fff;
+  width: 100%;
+  box-shadow: hsl(0, 0%, 50%) 0px 0px;
+  padding: 1rem;
+}
+
+.form-header {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form label {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+
+.form input {
+  border: 1px solid hsl(0, 0%, 85%);
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  width: 60%;
 }
