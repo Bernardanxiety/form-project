@@ -238,12 +238,18 @@ main .wrapper header {
 .form label {
   font-size: 0.85rem;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .form input {
   border: 1px solid hsl(0, 0%, 85%);
   padding: 4px 8px;
   border-radius: 5px;
+}
+
+input:focus {
+  border: 1px solid blue;
+  outline: none;
 }
 
 .form div {
@@ -254,3 +260,68 @@ main .wrapper header {
 .form input {
   width: 60%;
 }
+
+@media (min-width: 700px) {
+  .wrapper-body {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: clamp(100px, 40%, 536px) 1fr;
+  }
+}
+
+/* @media (min-width: 1000px) {
+  .hero .logo {
+    width: 95px;
+  }
+
+  .bg-dark {
+    padding: 0.9rem;
+    margin-top: -50%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  main .wrapper,
+  .form-div {
+    padding-left: clamp(1rem, 2.5vw, 3rem);
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-row: 1fr 1fr 1fr;
+    gap: 1.1rem 4.1rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .form input {
+    width: 98%;
+    font-size: 1rem;
+    padding: 0.35rem 0.4rem;
+  }
+
+  .form label {
+    font-size: 0.8rem;
+  }
+
+  .intro {
+    padding-top: 9.45rem;
+    padding-bottom: 2.45rem;
+  }
+
+  .form-header,
+  main .wrapper header {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  h2 {
+    line-height: 1.3;
+  }
+} */
